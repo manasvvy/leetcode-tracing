@@ -7,4 +7,4 @@ class Solution:
             else:
                 ans += char
 
-        return ans          
+        return ans        
