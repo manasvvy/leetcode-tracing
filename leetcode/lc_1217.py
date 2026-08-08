@@ -8,7 +8,8 @@ class Solution:
                 even += 
             else:
                 odd += 1
-        return min(odd, even)
+        return min(odd, even) 
+        
         
 
 
