@@ -6,3 +6,4 @@ class Solution:
             ans[indices[i]]=s[i]
             
         return"".join(ans)    
+
