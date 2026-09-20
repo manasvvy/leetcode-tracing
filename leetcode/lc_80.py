@@ -1,15 +1,10 @@
 class Solution:
-    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
-        i = m - 1
-        j = n - 1
-        k = m + n - 1
+    def removeDuplicates(self, nums: List[int]) -> int:
+        k = 0
 
-        while j >= 0:
-            if i >= 0 and nums1[i] > nums2[j]:
-                nums1[k] = nums1[i]
-                i -= 1
-            else:
-                nums1[k] = nums2[j]
-                j -= 1
+        for num in nums:
+            if k < 2 or num != nums[k - 2]:
+                nums[k] = num
+                k += 1
 
-            k -= 1
+        return k
